@@ -2,8 +2,9 @@
 
 import { useRef } from 'react';
 import dynamic from 'next/dynamic';
+import { Footer } from '@/components/ui/modules';
 // import { usePathname } from 'next/navigation';
-// import { Header, Footer } from '@/components/ui/modules';
+// import { Header } from '@/components/ui/modules';
 // import Link from 'next/link';
 
 const Scene = dynamic(() => import('@/webgl/Scene'), { ssr: false });
@@ -59,6 +60,18 @@ export function Layout({ children }) {
                 eventSource={ref}
                 eventPrefix="client"
             />
+            
+            {/* Footer with Attribution */}
+            <Footer>
+                <span style={{
+                    fontSize: '0.75rem',
+                    color: '#888888',
+                    fontWeight: '300',
+                    opacity: 0.7
+                }}>
+                    Made by Javed Saikia, 1994
+                </span>
+            </Footer>
 
         </div>
     );
