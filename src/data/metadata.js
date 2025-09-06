@@ -1,6 +1,6 @@
 export const metadata = {
     title: 'Codrops - Kinetic Images',
-    description: 'Made by Dominik Fojcik',
+    description: 'Interactive kinetic images with 3D effects',
 };
 
 export default metadata;
